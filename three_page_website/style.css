@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2em;
+  background-image: url('lightning.png');
+  background-color: #000;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 35px;
+}
+header{
+  background-color: black;
+  outline: white;
+  padding: 20px;
+}
+a{
+  color: rgb(42, 42, 255);
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 105px;
+  font: sans-serif;
+  background-color: #780606;
+  color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: cursive;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.rectangle {
+  max-height: 100%;
+  width: 1300px;
+  background-color: #780606;
+  border: 3px solid black;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 { 
+  text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+
+img{
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 1px;
+  max-width: 100%;
+  height: auto;
+}
