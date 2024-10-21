@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wai Problem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="mainContainer">
+
+    <div class="navWrapper">
+      <div class="navMenu">
+        <div class="navLinkContainer"><a href="index.html">Wai</a></div>
+        <div class="navLinkContainer"><a href="maui.html">Koʻikoʻi</a></div>
+        <div class="navLinkContainer"><a href="contact.html">Hoʻoponopono</a></div>
+      </div>
+    </div>
+
+    <div class="header">
+      <h1>Aia i Hea ka Wai a Kāne?</h1>
+
+    </div>
+
+    <div class="insetContainer">
+
+      <h2>Where is the water that keeps us human? The water we need to drink, grow, bloom, and live?</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.malama1.org/en/wp-content/uploads/2023/04/RemoteMediaFile_6553778_0_2022_05_07_11_26_30.jpeg" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://hawaiianpaddlesports.com/wp-content/uploads/black-and-white-1.jpg" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://ogden_images.s3.amazonaws.com/www.mauinews.com/images/2017/04/05114622/RITZcliffordawa.jpg" style="width:100%">
+  <!-- <div class="text">Caption Three</div> -->
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+  <h2>What is wai? And why should you care?</h2>
+  
+      <div class="twoColumnContainer">
+        <p>Water connects all life; it connects the towering mountains to the deepest depths of the ocean, it connects tropical rainforest to parched deserts, it connects me to you. Water doesn't care about your skin color, race, identity, or your opinions. We share this commonality that keeps us human (or however you identify).</p>
+        <p>Kanaka maoli (Native Hawaiians) depend on water. Life revolves around it: for planting, for thirst, for fishing, for fun, for the breathe of life, everything and anything. The word waiwai translates to value, worth, wealth, importance, benefit, valuable, rich, costly, which stems from the word wai (water).</p>
+      </div>
+
+      <div class="threeColumnContainer">
+        <div class="imageBlock">
+          <img src="https://oceanliteracy.unesco.org/wp-content/uploads/2022/05/plastic1-aspect-ratio-16-9-1500x844.jpeg">
+        </div>
+        <div class="imageBlock">
+          <img src="https://www.moas.eu/wp-content/uploads/Blog-Posts-3-e1710671489571-1024x681.png">
+        </div>
+        <div class="imageBlock">
+          <img src="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/03/rsz_rsplastic_on_beach_4_photo_by_raftography_sustainable_coastlines_hawaii_fpwc_ok_for_media_use-lpr.jpg">
+        </div>
+      </div>
+      <p> </p> <!-- spacer -->
+
+      <p>Kamaʻāina, Native Hawaiians, have been fighting to take control of Maui's water rights. Many kamaʻāina, and community activists say that fresh water in West Maui has been mismanaged for more than 180 years, because the rich want to get richer without the care of polluting other lives.</p>
+
+      <p> </p> <!-- spacer -->
+
+    </div> <!-- End of insetContainer -->
+
+
+    <div class="footer">
+      <p>2024 P. Farm</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
