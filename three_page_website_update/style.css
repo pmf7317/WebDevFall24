@@ -7,12 +7,12 @@ body, html {
   padding: 0px;
   font-family: sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 html {
   font-size: 18pt;
 }
-
 
 body {
   display: flex;
@@ -28,9 +28,11 @@ body {
 
 .navWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
   background-color: #000;
-  padding: 30px;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .navMenu {
@@ -41,10 +43,21 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   gap:1em;
+  align-items: center;
+}
+
+.navLinkContainer:hover{
+  text-shadow:
+    3px 3px 2px #0c1793,
+    -3px 3px 2px #0c1793,
+    -3px -3px 0 #0c1793,
+    3px -3px 0 #0c1793;
 }
 
 a, a:visited {
   color: #fff;
+  text-decoration: none;
+
 }
 
 .header {
@@ -53,7 +66,7 @@ a, a:visited {
   justify-content: center;
   height: 85vh;
   background-color: #333;
-  background-image: url('https://savethewetlands.org/wp-content/uploads/1200px-Taro_patches_along_Highway_36._Taro_root_is_the_basis_of_poi_a_traditional_Hawaiian_dish_November_1973_7157977506-1024x695.jpg');
+  background-image: url('https://dims.apnews.com/dims4/default/31d5759/2147483647/strip/false/crop/5670x4110+0+0/resize/1486x1077!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F5f%2F5f%2Fb324de39ad84d22469ee76e93bb7%2Fc69175252a414c99afd34d74f80aaf37');
   background-blend-mode: lighten;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,10 +79,10 @@ h1 {
   font-size: 16vmin;
   text-align: center;
   text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+    3px 3px 2px black,
+    -3px 3px 2px black,
+    -3px -3px 0 black,
+    3px -3px 0 black;
 }
 
 .insetContainer {
@@ -83,6 +96,12 @@ h2 {
   color: #fff;
   font-size: 48px;
   text-shadow: 2px 2px black;
+}
+
+h3 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
 }
 
 .mySlides {display: none;}
@@ -164,6 +183,26 @@ img {vertical-align: middle;}
   aspect-ratio: 1/1;
 }
 
+.imageBlock2 {
+  width: 100%;
+  font-size: 24pt;
+}
+
+
+.imageBlock2 img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  filter: brightness(100%);
+  transition: .3s ease;
+}
+
+.imageBlock2:hover img{
+  filter: brightness(40%);
+
+}
+
+
 .imageBlock p {
   margin-top: 0.5em;
   font-size: 2rem;
@@ -177,9 +216,13 @@ img {vertical-align: middle;}
 .twoColumnContainer p {
   font-size: 1.75vw;
   width: 100%;*/
-  /*lex-basis: 100%;
+  lex-basis: 100%;
   font-size: clamp(1em, 1.75vw, 4em);
-  flex: 1;*/
+  flex: 1;
+}
+
+.twoColumnContainer p: hover {
+  background-color: red;
 }
 
 .center {
