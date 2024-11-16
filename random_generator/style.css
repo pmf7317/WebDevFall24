@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB6C1;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff8e7;
+    border-radius: 10px;
+    outline: 2px solid black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #E75480;
+    color: #fff;
+    border: black dotted 1px;
+    padding: 10px 20px;
+    cursor: pointer; /*   this cursor thing is so cool wow */
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+button:hover {
+    background-color: #AA104F;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
