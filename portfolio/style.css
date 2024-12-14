@@ -1,56 +1,147 @@
-* { 
+*{
 	box-sizing: border-box;
- }
+}
 
- body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+/* general reset */
+body, h1, h2, h3, p, ul, ol, img, a {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 1rem;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.portfolio-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.card-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.card-info p {
+  font-size: 1rem;
+}
+
+.card-info a {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 10px 20px; 
+  border-radius: 4px; 
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-info a:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+.about-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5rem;
+.about-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-#portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.portfolio-item {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-item a {
-  text-decoration: none;
-  color: #0073e6;
+.about-section p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
 }
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 20px 0;
 }

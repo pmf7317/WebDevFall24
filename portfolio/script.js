@@ -1,33 +1,43 @@
-<!-- Assuming you have your JSON data in a variable called `portfolioData` -->
-let portfolioData = {
-  "portfolioItems": [
-    {
-      "title": "Project Title 1",
-      "description": "A brief overview of the project and its goals.",
-      "image": "images/project1.jpg",
-      "date": "2024-09-15",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "link": "https://example.com/project1"
-    },
-    // Other items...
-  ]
-};
+document.addEventListener("DOMContentLoaded", function () {
+  // select portfolio grid
+  const portfolioGrid = document.getElementById("portfolio-grid");
 
-const portfolioContainer = document.getElementById('portfolio');
+  // loop through each project in the JSON data
+  portfolioData.projects.forEach((project) => {
+    
+    // create project card
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-<!-- loop through each portfolio item and create HTML -->
-portfolioData.portfolioItems.forEach(item => {
-  const portfolioItem = document.createElement('div');
-  portfolioItem.classList.add('portfolio-item');
-  
-  portfolioItem.innerHTML = `
-    <h2>${item.title}</h2>
-    <img src="${item.image}" alt="${item.title}">
-    <p>${item.description}</p>
-    <p><strong>Date:</strong> ${item.date}</p>
-    <p><strong>Technologies:</strong> ${item.technologies.join(', ')}</p>
-    <a href="${item.link}" target="_blank">View Project</a>
-  `;
-  
-  portfolioContainer.appendChild(portfolioItem);
+    // add image
+    const img = document.createElement("img");
+    img.src = project.image;
+    img.alt = project.title;
+    card.appendChild(img);
+
+    // add card info
+    const cardInfo = document.createElement("div");
+    cardInfo.classList.add("card-info");
+
+    const title = document.createElement("h3");
+    title.textContent = project.title;
+    cardInfo.appendChild(title);
+
+    const subtitle = document.createElement("p");
+    subtitle.textContent = project.subtitle;
+    cardInfo.appendChild(subtitle);
+
+    // add link to project
+    const link = document.createElement("a");
+    link.href = project.link;
+    link.textContent = "View Project";
+    link.target = "_blank"; // Open link in new tab
+    cardInfo.appendChild(link);
+
+    // add card info to cards
+    card.appendChild(cardInfo);
+
+    // Add card to portfolio grid
+    portfolioGrid.appendChild(card);
+  });
 });

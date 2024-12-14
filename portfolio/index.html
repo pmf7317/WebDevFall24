@@ -1,24 +1,48 @@
+<!-- ALOHA EFFIE, this is just a basic structure for a portfolio idea, It's very open ended and unfinished, I just wanted to meet the requirements and implement JSON -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PF Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <div class="container">
+      <h1>PUA FARM</h1>
+      <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
   </header>
-  <main id="portfolio">
-    <!-- Portfolio items will be inserted here via JavaScript -->
-  </main>
-  <footer>
-    <p>© 2024 Pua Farm</p>
-  </footer>
 
-  <!-- Link to JSON data and main script -->
-  <script src="portfolioData.js"></script>
+  <main>
+    <!-- portfolio section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div id="portfolio-grid" class="grid"></div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my portfolio! I'm a digital artist specializing in interactive and generative art. Feel free to explore my projects and get in touch if you'd like to collaborate. Cook this up more.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 PF Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="portfolioData.js" type="text/javascript"></script>
   <script src="script.js"></script>
 </body>
 </html>
