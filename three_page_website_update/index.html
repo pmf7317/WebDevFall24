@@ -5,7 +5,10 @@
 <head>
   <meta charset="utf-8">
   <title>Wai Problem</title>
+  
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
 </head>
 
 <body>
@@ -21,13 +24,12 @@
     </div>
 
     <div class="header">
-      <h1>Aia i Hea ka Wai a Kāne?</h1>
-
+      <h1 data-aos="fade-up">Aia i Hea ka Wai a Kāne?</h1>
     </div>
 
     <div class="insetContainer">
 
-      <h2>Where is the water that keeps us human? The water we need to drink, grow, bloom, and live?</h2>
+      <h2 data-aos="fade-right">Where is the water that keeps us human? The water we need to drink, grow, bloom, and live?</h2>
 
 <div class="slideshow-container">
 
@@ -79,27 +81,27 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 </script>
-  <h2>What is wai? And why should you care?</h2>
+  <h2 data-aos="fade-down">What is wai? And why should you care?</h2>
   
       <div class="twoColumnContainer">
-        <p>Water connects all life; it connects the towering mountains to the deepest depths of the ocean, it connects tropical rainforest to parched deserts, it connects me to you. Water doesn't care about your skin color, race, identity, or your opinions. We share this commonality that keeps us human (or however you identify).</p>
-        <p>Kanaka maoli (Native Hawaiians) depend on water. Life revolves around it: for planting, for thirst, for fishing, for fun, for the breathe of life, everything and anything. The word waiwai translates to value, worth, wealth, importance, benefit, valuable, rich, costly, which stems from the word wai (water).</p>
+        <p data-aos="fade-left">Water connects all life; it connects the towering mountains to the deepest depths of the ocean, it connects tropical rainforest to parched deserts, it connects me to you. Water doesn't care about your skin color, race, identity, or your opinions. We share this commonality that keeps us human (or however you identify).</p>
+        <p data-aos="fade-right">Kanaka maoli (Native Hawaiians) depend on water. Life revolves around it: for planting, for thirst, for fishing, for fun, for the breathe of life, everything and anything. The word waiwai translates to value, worth, wealth, importance, benefit, valuable, rich, costly, which stems from the word wai (water).</p>
       </div>
 
       <div class="threeColumnContainer">
-        <div class="imageBlock">
+        <div class="imageBlock" data-aos="flip-left">
           <img src="https://oceanliteracy.unesco.org/wp-content/uploads/2022/05/plastic1-aspect-ratio-16-9-1500x844.jpeg">
         </div>
-        <div class="imageBlock">
+        <div class="imageBlock" data-aos="flip-left">
           <img src="https://www.moas.eu/wp-content/uploads/Blog-Posts-3-e1710671489571-1024x681.png">
         </div>
-        <div class="imageBlock">
+        <div class="imageBlock" data-aos="flip-left">
           <img src="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2022/03/rsz_rsplastic_on_beach_4_photo_by_raftography_sustainable_coastlines_hawaii_fpwc_ok_for_media_use-lpr.jpg">
         </div>
       </div>
       <p> </p> <!-- spacer -->
 
-      <p>Kamaʻāina, Native Hawaiians, have been fighting to take control of Maui's water rights. Many kamaʻāina, and community activists say that fresh water in West Maui has been mismanaged for more than 180 years, because the rich want to get richer without the care of polluting other lives.</p>
+      <p data-aos="fade-right">Kamaʻāina, Native Hawaiians, have been fighting to take control of Maui's water rights. Many kamaʻāina, and community activists say that fresh water in West Maui has been mismanaged for more than 180 years, because the rich want to get richer without the care of polluting other lives.</p>
 
       <p> </p> <!-- spacer -->
 
@@ -111,6 +113,15 @@ function showSlides() {
     </div>
 
   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- AOS JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    });
+  </script>
 
 </body>
 

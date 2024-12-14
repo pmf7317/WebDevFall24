@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <title>Wai Problem</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">  
 </head>
 
 <body>
@@ -22,13 +23,13 @@
     </div>
 
     <div class="header">
-      <h1>Nā Pilikia Pili Wai</h1>
+      <h1 data-aos="fade-up">Nā Pilikia Pili Wai</h1>
 
     </div>
 
     <div class="insetContainer">
 
-      <h2>The battles and problems revolving around water in Maui, Hawaiʻi</h2>
+      <h2 data-aos="fade-right">The battles and problems revolving around water in Maui, Hawaiʻi</h2>
 
 
       <img src="https://civileats.com/wp-content/uploads/2023/08/230823-maui-lahaina-wildfire-big-sugar-ag-plantations-water-climate-change-risk-history-colonialism-1-top-sugar-mill-credit-John-elk-getty-images.jpg" alt="Pu’unene, Maui, Dormant Sugar Cane Plantation" class="center">
@@ -37,11 +38,11 @@
 
       <div class="twoColumnContainer">
         <div class="imageBlock">
-          <img src="https://images.squarespace-cdn.com/content/5e28fa5870afe4486a9e6a2d/1600471235971-5E1R1AHBRL29OHGGYM9T/?content-type=image%2Fjpeg">
+          <img src="https://images.squarespace-cdn.com/content/5e28fa5870afe4486a9e6a2d/1600471235971-5E1R1AHBRL29OHGGYM9T/?content-type=image%2Fjpeg" data-aos="zoom-in">
           <p>Dry Water Streams</p>
         </div>
         <div class="imageBlock">
-          <img src="https://www.hawaiitribune-herald.com/wp-content/uploads/2022/04/web1_IMG_9633.jpg">
+          <img src="https://www.hawaiitribune-herald.com/wp-content/uploads/2022/04/web1_IMG_9633.jpg" data-aos="zoom-in">
           <p>Homeless Hawaiians</p>
         </div>
       </div>
@@ -113,6 +114,15 @@
     </div>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    });
+  </script>
 
 </body>
 

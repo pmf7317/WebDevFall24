@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <title>Wai Problem</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> 
 </head>
 
 <body>
@@ -22,7 +23,7 @@
     </div>
 
     <div class="header">
-      <h1>Pehea Lā e Hoʻoponopono?</h1>
+      <h1 data-aos="fade-up">Pehea Lā e Hoʻoponopono?</h1>
 
     </div>
 
@@ -72,6 +73,15 @@
     </div>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    });
+  </script>
 
 </body>
 
